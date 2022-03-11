@@ -1,0 +1,42 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Job Listing</span>
+    <span class="example-spacer"></span>
+    <button mat-raised-button class="btn" (click)="openRegisterForm()">
+      Register
+    </button>
+    <button mat-raised-button class="btn" (click)="openLoginForm()">
+      Login
+    </button>
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <span
+      >You are logged in as
+      {{ loggedUser.name ? loggedUser.name : "..." }}</span
+    >
+    <span class="example-spacer"></span>
+    <button
+      *ngIf="loggedUser.type === 'Company'"
+      mat-raised-button
+      class="btn"
+      (click)="openAdDialog()"
+    >
+      Post Ad
+    </button>
+
+    <button
+      mat-raised-button
+      class="btn"
+      (click)="deleteAccount(loggedUser.id)"
+    >
+      Delete Account
+    </button>
+    <!-- <button
+      mat-raised-button
+      class="btn btn-edit"
+      (click)="editAccount(loggedUser)"
+    >
+      Edit Account
+    </button> -->
+  </mat-toolbar-row>
+</mat-toolbar>

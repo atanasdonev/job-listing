@@ -1,0 +1,45 @@
+<h1 mat-dialog-title>Post Ad</h1>
+
+<div mat-dialog-content>
+  <form [formGroup]="adForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Title</mat-label>
+      <input formControlName="title" matInput placeholder="Title" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Ad Category</mat-label>
+      <mat-select formControlName="category" placeholder="Category">
+        <mat-option value="Development">Development</mat-option>
+        <mat-option value="Office Administration"
+          >Office Administration</mat-option
+        >
+        <mat-option value="System Admin">System Admin</mat-option>
+        <mat-option value="Database Admin">Database Admin</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Ad Type</mat-label>
+      <mat-select formControlName="type" placeholder="Ad Type">
+        <mat-option value="Full-Time">Full-Time</mat-option>
+        <mat-option value="Part-Time">Part-Time</mat-option>
+        <mat-option value="Remote">Remote</mat-option>
+        <mat-option value="On-site">On-site</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Description</mat-label>
+      <textarea formControlName="description" matInput></textarea>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-action [align]="'center'">
+  <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+  <button
+    style="margin: 0 10px"
+    mat-raised-button
+    color="primary"
+    (click)="onSubmit()"
+  >
+    {{ actionBtn }}
+  </button>
+</div>

@@ -1,0 +1,52 @@
+{
+  "ads": [
+    {
+      "id": 1,
+      "title": "Front End Developer",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a mi vehicula, accumsan magna ut, laoreet purus.",
+      "category": "Development",
+      "likes": 5,
+      "type": "remote"
+    },
+    {
+      "title": "test",
+      "description": "test",
+      "category": "Development",
+      "type": "Full-Time",
+      "id": 8,
+      "likes": 4
+    },
+    {
+      "title": "test",
+      "description": "test",
+      "category": "System Admin",
+      "type": "Full-Time",
+      "likes": 2,
+      "id": 9
+    }
+  ],
+  "registeredUsers": [
+    {
+      "email": "company@test.bg",
+      "password": "123456",
+      "name": "test company",
+      "type": "Company",
+      "id": 1
+    },
+    {
+      "email": "user@test.bg",
+      "password": "123456",
+      "name": "test user",
+      "type": "Individual User",
+      "id": 2
+    },
+    {
+      "email": "company2@test.bg",
+      "password": "123456",
+      "name": "company 2",
+      "type": "Company",
+      "id": 3
+    }
+  ],
+  "registeredCompanies": []
+}
